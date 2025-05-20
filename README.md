@@ -1,8 +1,7 @@
 
-# Ash of the Templars – Alpha 2.0
+# Ash of the Templars – Alpha 2.1
 
 Obsah:
-- ReadyPlayerMe Avatar (Swordkeeper)
-- 3rd person kamera
+- Animace chůze a idle
+- Otáčení kamery myší (3rd person)
 - Pohyb pomocí WASD
-- Připraveno pro bojový systém
