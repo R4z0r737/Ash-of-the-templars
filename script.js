@@ -1,35 +1,31 @@
 
-console.log("Alpha 1.0.4 - Script running");
+import * as THREE from 'https://cdn.skypack.dev/three@0.136.0';
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/loaders/GLTFLoader';
 
-const canvas = document.getElementById("gameCanvas");
-const ctx = canvas.getContext("2d");
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-let x = 375;
-let y = 275;
-const size = 50;
-const speed = 5;
+const light = new THREE.HemisphereLight(0xffffff, 0x444444);
+light.position.set(0, 200, 0);
+scene.add(light);
 
-const keys = {};
-
-document.addEventListener("keydown", (e) => {
-    keys[e.key] = true;
+const loader = new GLTFLoader();
+loader.load('https://models.readyplayer.me/682b7435afef277053209d35.glb', function (gltf) {
+    const model = gltf.scene;
+    model.scale.set(1.5, 1.5, 1.5);
+    model.position.set(0, 0, 0);
+    scene.add(model);
+    animate();
+}, undefined, function (error) {
+    console.error('Error loading model:', error);
 });
 
-document.addEventListener("keyup", (e) => {
-    keys[e.key] = false;
-});
+camera.position.z = 5;
 
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "white";
-    ctx.fillRect(x, y, size, size);
-
-    if (keys["ArrowUp"] || keys["w"]) y -= speed;
-    if (keys["ArrowDown"] || keys["s"]) y += speed;
-    if (keys["ArrowLeft"] || keys["a"]) x -= speed;
-    if (keys["ArrowRight"] || keys["d"]) x += speed;
-
-    requestAnimationFrame(gameLoop);
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
 }
-
-gameLoop();

@@ -1,7 +1,7 @@
 
-# Ash of the Templars – Alpha 1.0.4
+# Ash of the Templars – Alpha 1.1
 
-This version includes:
-- Canvas display
-- Basic square placeholder for player character
-- WASD and arrow key movement support
+Obsah:
+- ReadyPlayerMe Avatar (Swordkeeper)
+- 3D scéna
+- Připraveno na integraci útoků, blokování, ovladače a AI
