@@ -1,9 +1,7 @@
 
-# Ash of the Templars – Alpha 1.0.3
+# Ash of the Templars – Alpha 1.0.4
 
-This is the fixed version of Alpha 1.0 build.
-
-### Included Features:
-- No loading hang
-- Simplified placeholder display
-- Ready for future model integration
+This version includes:
+- Canvas display
+- Basic square placeholder for player character
+- WASD and arrow key movement support
