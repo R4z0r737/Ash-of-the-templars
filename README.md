@@ -1,6 +1,7 @@
 
-# Ash of the Templars – Alpha 2.2
+# Ash of the Templars – Alpha 2.2 Diagnostic
 
-- Opraveno WASD ovládání modelu
-- Přidána správná kamera
-- Připravena animace a logika chůze
+- Ověření WASD ovládání
+- Funkční světlo, kamera a scéna
+- Pohyb krychle místo modelu
+- Výpis do konzole pro ladění
