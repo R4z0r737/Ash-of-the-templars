@@ -1,7 +1,6 @@
 
-# Ash of the Templars – Alpha 2.1 Final
+# Ash of the Templars – Alpha 2.2
 
-- Opraveno: černá obrazovka
-- Přidán: 3D avatar + světlo
-- Pohyb pomocí WASD
-- Připraveno pro animace a další funkce
+- Opraveno WASD ovládání modelu
+- Přidána správná kamera
+- Připravena animace a logika chůze
