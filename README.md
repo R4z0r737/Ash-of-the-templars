@@ -1,8 +1,7 @@
 
-# Ash of the Templars – Alpha 2.1 Version B
+# Ash of the Templars – Alpha 2.1 Final
 
-Obsah:
-- Animace chůze a idle
-- Otáčení kamery myší (3rd person)
+- Opraveno: černá obrazovka
+- Přidán: 3D avatar + světlo
 - Pohyb pomocí WASD
-- Kamera v optimalizované výšce (Verze B)
+- Připraveno pro animace a další funkce
