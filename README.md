@@ -1,7 +1,7 @@
 
-# Ash of the Templars – Alpha 2.2 Diagnostic
+# Ash of the Templars – Alpha 2.2 Final
 
-- Ověření WASD ovládání
-- Funkční světlo, kamera a scéna
-- Pohyb krychle místo modelu
-- Výpis do konzole pro ladění
+- Funkční WASD ovládání postavy
+- Funkční kamera zezadu
+- Načtený model z ReadyPlayerMe
+- Jednoduchá animace chůze
